@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".FifthActivity"
+    android:background="#82DD86">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_info"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textSize="29sp"
+        android:background="#E19AED"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_info"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:text="The application prompts a user to guess a number between 1 and 1000.
+The application compares the user input number to the number it randomly generated."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="Then :"
+        android:id="@+id/text2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:textSize="16sp"
+        android:text="if the numbers don't match, it will provide a hint and ask the user higher or lower.
+
+if the numbers do match, the game ends, but can be started again if the user wants to."/>
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/b_higher"
+    android:layout_centerVertical="true"
+    android:text="HIGHER"
+        android:textSize="20sp"
+        android:background="#ED977B"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_yes"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/b_higher"
+        android:text="YES"
+        android:textSize="20sp"
+        android:background="#ECDBAA"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_lower"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/b_yes"
+        android:text="LOWER"
+        android:textSize="20sp"
+        android:background="#E1A0B6"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_ok"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="OK"
+        android:textSize="25sp"
+        android:background="#ACC9E6"/>
+
+</RelativeLayout>

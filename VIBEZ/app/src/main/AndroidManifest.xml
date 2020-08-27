@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vibez">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FourthActivity"
+            android:label="REPEAT GAME"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".EighthActivity"
+            android:label="TIC TAC TOE"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SeventhActivity"
+            android:label="TAPPING GAME"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SixthActivity"
+            android:label="ROCK PAPER SCISSORS"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FifthActivity"
+            android:label="MIND READER GAME"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ThirdActivity"
+            android:label="ANAGRAM GAME"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SecondActivity"
+            android:label="MEMORY GAME"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:label="VIBEZ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

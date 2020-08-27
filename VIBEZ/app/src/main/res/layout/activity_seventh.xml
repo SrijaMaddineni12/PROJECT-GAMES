@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeventhActivity"
+    android:padding="15dp"
+    android:background="#F8CCDB">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_tap"
+        android:id="@+id/image"
+        android:background="#EAE192"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START TAPPING"
+        android:layout_centerInParent="true"
+        android:id="@+id/Text1"
+        android:textSize="20sp"
+        android:textColor="#123456"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BEST RESULT : 0"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:textColor="#123456"
+        android:id="@+id/Text2"/>
+    <TextView
+        android:id="@+id/tapping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="5dp"
+        android:text="In, particular space given and time given the player should keep on tapping when the time starts."
+        android:textSize="18sp"
+        android:textColor="#123456"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tapping"
+        android:layout_marginTop="5dp"
+        android:text="If the number of tappings is the highest than the previous one,the best highest score will be recorded."
+        android:textSize="18sp"
+        android:textColor="#123456"/>
+
+</RelativeLayout>
